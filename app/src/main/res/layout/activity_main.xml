@@ -10,12 +10,11 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_gravity="center"
         android:src="@drawable/user_form"
-        android:padding="@dimen/padding_image"
-        android:textSize="@dimen/text_size"/>
+        android:padding="10dp" />
 
     <EditText
         android:id="@+id/name_text_box"
@@ -55,6 +54,6 @@
         android:layout_gravity="end"
         android:background="@color/fondo_color"
         android:drawableLeft="@drawable/next_image"
-        android:layout_marginTop="80dp" />
+        android:layout_marginTop="60dp" />
 
 </LinearLayout>

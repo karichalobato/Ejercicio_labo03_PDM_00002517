@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/fondo_color">
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/check_form"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/standar_marginleft"
+        android:text="Name not received"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/tv_pass"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/standar_marginleft"
+        android:text="Pass not received"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/standar_marginleft"
+        android:text="Email not received"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/share_image"
+        android:layout_gravity="end"
+        android:background="@color/fondo_color"/>
+
+
+</LinearLayout>
