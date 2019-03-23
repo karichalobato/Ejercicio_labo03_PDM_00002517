@@ -1,18 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/fondo_color"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/userForm"
+        android:padding="@dimen/padding_image"
+        android:textSize="@dimen/text_size"/>
+
+    <EditText
+        android:id="@+id/name_text_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textColor="@color/text_color"
+        android:layout_margin="20dp"
+        android:drawableLeft="@drawable/manUser_image"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/pass_text_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/text_color"
+        android:layout_margin="20dp"
+        android:drawableLeft="@drawable/password_image"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/email_text_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColor="@color/text_color"
+        android:layout_margin="20dp"
+        android:drawableLeft="@drawable/message_image"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btn_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="end"
+        android:background="@color/fondo_color"
+        android:drawableLeft="@drawable/next_image"
+        android:layout_marginTop="80dp" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
