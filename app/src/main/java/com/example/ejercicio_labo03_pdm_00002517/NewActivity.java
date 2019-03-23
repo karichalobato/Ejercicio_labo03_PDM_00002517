@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class NewActivity extends AppCompatActivity {
     private TextView nName, nPassword,nEmail;
-    private Button nBtn_Share;
+    private Button nBtnShare;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,20 +27,18 @@ public class NewActivity extends AppCompatActivity {
             nEmail.setText("Email: " + mIntent.getStringExtra("email"));
         }
 
-        nBtn_Share = findViewById(R.id.btn_share);
-        nBtn_Share.setOnClickListener(v ->{
-            String name= nName.getText().toString();
+        nBtnShare = findViewById(R.id.btn_share);
+        nBtnShare.setOnClickListener(v ->{
+            String name = nName.getText().toString();
             String password = nPassword.getText().toString();
             String email = nEmail.getText().toString();
-
-            Intent nIntent = new Intent();
-
-            nIntent.setType("text/plain");
-            nIntent.setAction(Intent.ACTION_SEND);
-            nIntent.putExtra("name", name);
-            nIntent.putExtra("password", password);
-            nIntent.putExtra("email", email);
-            startActivity(nIntent);
+            Intent tIntent = new Intent();
+            tIntent.setType("text/plain");
+            tIntent.setAction(Intent.ACTION_SEND);
+            tIntent.putExtra("name", name);
+            tIntent.putExtra("password", password);
+            tIntent.putExtra("email", email);
+            startActivity(tIntent);
         });
     }
 }
