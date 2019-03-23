@@ -29,6 +29,17 @@
         android:textSize="@dimen/text_size"/>
 
     <TextView
+        android:id="@+id/tv_lastname_share"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/standar_marginleft"
+        android:text="Lastname not received"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
         android:id="@+id/tv_pass_share"
         android:layout_weight="1"
         android:layout_width="wrap_content"

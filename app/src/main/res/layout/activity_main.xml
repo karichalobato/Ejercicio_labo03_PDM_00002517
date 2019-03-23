@@ -27,6 +27,16 @@
         android:drawablePadding="10dp"/>
 
     <EditText
+        android:id="@+id/lastname_text_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lastname"
+        android:textColor="@color/text_color"
+        android:layout_margin="20dp"
+        android:drawableLeft="@drawable/user_image"
+        android:drawablePadding="10dp"/>
+
+    <EditText
         android:id="@+id/pass_text_box"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

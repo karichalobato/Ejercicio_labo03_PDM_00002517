@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 public class ShareActivity extends AppCompatActivity {
 
-    private TextView sName, sPassword, sEmail;
+    private TextView sName, sLastname, sPassword, sEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +15,7 @@ public class ShareActivity extends AppCompatActivity {
         setContentView(R.layout.activity_share);
 
         sName = findViewById(R.id.tv_name_share);
+        sLastname = findViewById(R.id.tv_lastname_share);
         sPassword = findViewById(R.id.tv_pass_share);
         sEmail = findViewById(R.id.tv_email_share);
 
@@ -22,6 +23,7 @@ public class ShareActivity extends AppCompatActivity {
 
         if(sIntent != null){
             sName.setText(sIntent.getStringExtra("name"));
+            sLastname.setText(sIntent.getStringExtra("lastname"));
             sPassword.setText(sIntent.getStringExtra("password"));
             sEmail.setText(sIntent.getStringExtra("email"));
         }
