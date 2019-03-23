@@ -13,7 +13,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        android:src="@drawable/userForm"
+        android:src="@drawable/user_form"
         android:padding="@dimen/padding_image"
         android:textSize="@dimen/text_size"/>
 
@@ -24,7 +24,7 @@
         android:hint="Name"
         android:textColor="@color/text_color"
         android:layout_margin="20dp"
-        android:drawableLeft="@drawable/manUser_image"
+        android:drawableLeft="@drawable/user_image"
         android:drawablePadding="10dp"/>
 
     <EditText
